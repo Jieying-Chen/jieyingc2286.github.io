@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.7;
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #1a365d;
+}
+
+.header-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.profile-section {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #1a365d;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.research-intro {
+    flex: 1;
+    color: #444;
+    font-size: 1.05em;
+    line-height: 1.8;
+    padding-top: 10px;
+}
+
+.research-intro p {
+    margin-bottom: 15px;
+}
+
+.research-intro p:last-child {
+    margin-bottom: 0;
+}
+
+h1 {
+    color: #1a365d;
+    font-size: 2.2em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #2c5282;
+    font-size: 1em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #1a365d;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.social-link:hover {
+    background: #2c5282;
+    transform: translateY(-2px);
+}
+
+.social-link i {
+    font-size: 1.1em;
+}
+
+/* Section Styling */
+.section {
+    margin: 50px 0;
+}
+
+.section-title {
+    color: #1a365d;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1a365d;
+}
+
+.section-content {
+    color: #444;
+    font-size: 1.05em;
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+.section-content p {
+    margin-bottom: 15px;
+}
+
+.section-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Publications */
+.publications-list {
+    margin-top: 30px;
+}
+
+.publication {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.publication:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.publication-title {
+    color: #1a365d;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.publication-authors {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 6px;
+}
+
+.publication-venue {
+    color: #2c5282;
+    font-size: 0.95em;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.publication-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pub-link {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #e2e8f0;
+    color: #1a365d;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pub-link:hover {
+    background: #1a365d;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    color: #888;
+    font-size: 0.9em;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 40px 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+}
